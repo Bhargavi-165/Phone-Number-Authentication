@@ -1,0 +1,32 @@
+{% extends "layout.html "%}
+{% load static %}
+   {% block content %}
+   <div class="container mb-3">
+    
+    <div class="row">
+        <button  class="btn btn-danger mt-5"data-bs-toggle="collapse" data-bs-target="#about">LEARN MORE</button>
+        <div class="col-sm-6">
+            
+            <img src="{% static 'images/aplogo.png' %}" alt="" width="100%" height="100%" >
+        </div>
+        <div class="col-sm-6">
+            <div id="about" class="collapse">
+            <h1 style="font-family:Agency FB; text-align: center; margin-top: 5px;">ABOUT US</h1>
+            <p style="text-align:justify;"> A phone number verification (or validation) services are online services used to establish whether a given phone number is in service or not . They may include a form of Turing test to further determine if a human answers by using any of the answering equipment such as a modem, fax, voice Mail</p>
+            <p style="text-align:justify;">phone numbers in India have ten digits (excluding an initial zero which is required at times) and fall into at least four distinct categories:
+
+                Toll Free: These are usually ten digit numbers beginning with 1-800. Sometimes they are accessible (or are toll-free) only when called from the government-owned telephone corporation, BSNL/MTNL.
+                Service numbers: These are usually three or four digit numbers (e.g. Police is 100) used to access an emergency service (Fire, Ambulance, Police, Roadside assistance) or a value-added service.</p>
+                <p>Phone number authentication is a security process used to verify a user's identity by associating their phone number with an account or service. Here’s how it generally works:
+
+                    User Input: The user provides their phone number to the service or application.
+                    Verification Code: The service sends a verification code (usually a one-time password or OTP) to the provided phone number via SMS or voice call.
+                    Code Entry: The user enters the received code into the application or website.
+                    Validation: The service validates the code. If it matches the code sent, the phone number is confirmed as belonging to the user.
+                    This method is commonly used for account creation, password recovery, and two-factor authentication (2FA) to enhance security.
+                    </p>
+            </div>
+   </div>
+</div>
+</div>
+   {% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html "%}
+{% load static %}
+
+{% block content %}
+<nav class="navbar navbar-expand-sm "></nav>
+ <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'images/pa4.jpeg' %}" class="mt-5" width="100%" height="75%" alt="">
+            </div>
+            <div class="col-sm-6 mt-5">
+                <h1 class="text-center mb-4">Registration Page</h1>
+                <span>{{msg}}</span>
+                <form action="/doregister">
+                    <div class="mb-4">
+                        <input type="text" name="fullname" id="fullnameid" class="form-control border border-3 border-black" required placeholder="FullName">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="email" id="emailid" class="form-control border border-3 border-black" required placeholder="EmailId">
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" name="password" id="passwordid" class="form-control border border-3 border-black" required placeholder="Password">
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" name="conformpassword" id="conformpasswordid" class="form-control border border-3 border-black" required placeholder="Confirm Password">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" name="phone" id="phone number" class="form-control border border-3 border-black" required placeholder="PhoneNumber">
+                    </div>
+                    <div class="form-check">
+                        <input style="border-color: blue;" class="form-check-input" type="checkbox" id="flexcheckDefault">
+                        <label class="form-check-label" for="flexcheckDefault">I agree to the terms and conditions!</label>
+                    </div>
+                      
+                    
+    
+                    <div class="mb-2 mt-4">
+                        <button class="btn btn-primary justify" type="submit">Register</button>
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock%}

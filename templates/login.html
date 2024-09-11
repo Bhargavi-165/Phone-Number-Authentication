@@ -1,0 +1,33 @@
+{% extends "layout.html "%}
+{% load static %}
+
+{% block content %}
+<nav class="navbar navbar-expand-sm "></nav>
+   <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'images/pa7.png' %}" width="98%" class="mt-5 mb-5" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h1 class="text-center mt-5 mb-5">Login Page</h1>
+                <span>{{msg}}</span>
+                <form action="/logincheck/" method="post">
+                    {% csrf_token %}
+                    <div class="mb-5">
+                        <input type="Phonenumber" name="phone" id="Phonenumberid" class="form-control border border-3 border-black" required placeholder="PhoneNumber">
+                    </div>
+                    <div class="mb-5">
+                        <input type="email" name="email" id="emailid" class="form-control border border-3 border-black" required placeholder="EmailId">
+                    </div>
+                    <div class="mb-5">
+                        <input type="password" name="password" id="password" class="form-control border border-3 border-black" required placeholder="Password">
+                    </div>
+                     <div class="mb-3 mt-5">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </div>
+{% endblock %}

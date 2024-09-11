@@ -1,0 +1,19 @@
+{% extends "adminlayout.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="{% static 'images/adminhome.png' %}" alt="">
+        </div>
+        <div class="col-sm-7">
+            <h1 class="text-center m-4">Admin Home Page</h1>
+            <p style="text-align: justify;">The first type of authentication is accepting proof of identity given by a credible person who has first-hand evidence that the identity is genuine. When authentication is required of art or physical objects, this proof could be a friend, family member, or colleague attesting to the item's provenance, perhaps by having witnessed the item in its creator's possession. With autographed sports memorabilia, this could involve someone attesting that they witnessed the object being signed. A vendor selling branded items implies authenticity, while they may not have evidence that every step in the supply chain was authenticated. Centralized authority-based trust relationships back most secure internet communication through known public certificate authorities; decentralized peer-based trust, also known as a web of trust, is used for personal services such as email or files and trust is established by known individuals signing each other's cryptographic key for instance.
+
+                The second type of authentication is comparing the attributes of the object itself to what is known about objects of that origin. For example, an art expert might look for similarities in the style of painting, check the location and form of a signature, or compare the object to an old photograph. An archaeologist, on the other hand, might use carbon dating to verify the age of an artifact, do a chemical and spectroscopic analysis of the materials used, or compare the style of construction or decoration to other artifacts of similar origin. The physics of sound and light, and comparison with a known physical environment, can be used to examine the authenticity of audio recordings, photographs, or videos. Documents can be verified as being created on ink or paper readily available at the time of the item's implied creation.
+                
+                Attribute comparison may be vulnerable to forgery. In general, it relies on the facts that creating a forgery indistinguishable from a genuine artifact requires expert knowledge, that mistakes are easily made, and that the amount of effort required to do so is considerably greater than the amount of profit that can be gained from the forgery.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
